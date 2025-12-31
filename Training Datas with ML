@@ -1,0 +1,120 @@
+!git clone https://github.com/ultralytics/yolov5.git
+!git clone https://github.com/ultralytics/yolov5.git
+!pip install -r yolov5/requirements.txt
+import torch
+print(torch.cuda.is_available())  # Check if GPU is available
+!python yolov5/train.py --help   # Test if YOLOv5 runs
+!pip install ultralytics
+from ultralytics import YOLO
+model = YOLO("yolov8n.pt")  # Load pre-trained model
+print("YOLOv8 installed successfully!")
+!pip install ultralytics
+from ultralytics import YOLO
+import os
+
+print("Train images exist:", os.path.exists("train/images"))
+print("Validation images exist:", os.path.exists("valid/images"))
+print("Test images exist:", os.path.exists("test/images"))
+import os
+os.listdir()
+import os
+os.chdir("Desktop/Mini_project/archive/")  # Change directory
+print(os.listdir())  # Check contents
+import shutil
+import shutil
+
+# Move dataset if necessary
+shutil.move("correct/path/train", "Desktop/Mini_project/archive/train")
+shutil.move("correct/path/valid", "Desktop/Mini_project/archive/valid")
+shutil.move("correct/path/test", "Desktop/Mini_project/archive/test")
+import os
+
+# Get the current directory
+print("Current working directory:", os.getcwd())
+
+# List all files & folders in the current directory
+print("Contents of current directory:", os.listdir())
+os.chdir("C:\\Users\\lenovo\\Desktop\\Mini_project\\archive")  # Set working directory
+print("New working directory:", os.getcwd())  # Confirm change
+print("Train images exist:", os.path.exists("train/images"))
+print("Validation images exist:", os.path.exists("valid/images"))
+print("Test images exist:", os.path.exists("test/images"))
+from ultralytics import YOLO
+
+# Load YOLOv8 model
+model = YOLO("yolov8n.pt")
+
+# Train
+model.train(data="C:/Users/lenovo/Desktop/Mini_project/archive/data.yaml", epochs=30, imgsz=640)
+import os
+
+# Get the current working directory
+print("Current working directory:", os.getcwd())
+
+# Check if dataset folders exist in the current directory
+print("Train images exist:", os.path.exists("train/images"))
+print("Validation images exist:", os.path.exists("valid/images"))
+print("Test images exist:", os.path.exists("test/images"))
+import os
+
+# Change directory to where your dataset is
+os.chdir("C:/Users/lenovo/Desktop/Mini_project/archive/")
+
+# Verify
+print("New working directory:", os.getcwd())
+print("Train images exist:", os.path.exists("train/images"))
+print("Validation images exist:", os.path.exists("valid/images"))
+print("Test images exist:", os.path.exists("test/images"))
+from ultralytics import YOLO
+
+# Load YOLOv8 model
+model = YOLO("yolov8n.pt")
+
+# Train the model
+model.train(data="data.yaml", epochs=30, imgsz=640)
+import shutil
+shutil.rmtree("C:/Users/lenovo/datasets", ignore_errors=True)
+import os
+
+train_images = os.listdir("train/images")
+print("Number of images in train dataset:", len(train_images))
+print("First 5 images:", train_images[:5])
+train_labels = os.listdir("train/labels")
+print("Number of labels in train dataset:", len(train_labels))
+print("First 5 labels:", train_labels[:5])
+import os
+os.chdir("C:/Users/lenovo/Desktop/Mini_project/archive/")
+print("Current directory:", os.getcwd())
+import shutil
+shutil.rmtree("C:/Users/lenovo/datasets", ignore_errors=True)
+import os
+from ultralytics import YOLO
+
+# Set working directory to dataset location
+os.chdir("C:/Users/lenovo/Desktop/Mini_project/archive/")
+
+# Load YOLOv8 model
+model = YOLO("yolov8n.pt")
+
+# Train the model
+model.train(data="data.yaml", epochs=50, imgsz=640)
+from ultralytics import YOLO  # Import YOLO from ultralytics
+
+# Load a pre-trained YOLOv8 model
+model = YOLO("yolov8n.pt")
+
+# Train the model (Make sure the path to data.yaml is correct)
+model.train(data="C:/Users/lenovo/Desktop/Mini_project/archive/data.yaml", epochs=50, imgsz=640)
+import sys
+print(sys.version)
+from ultralytics import YOLO
+model = YOLO("yolov8n.pt")  # Nano model (smallest & fastest)
+model.train(data="C:/Users/lenovo/Desktop/Mini_project/archive/data.yaml", 
+            epochs=30, imgsz=640, batch=4, workers=2)
+model.val()
+results = model("C:/Users/lenovo/Desktop/Mini_project/archive/test/images/video_2023-05-30_19-00-57_000005_jpg.rf.ac3351a140456b42db70b6e349318c22.jpg", save=True, conf=0.5)
+C:\Program Files\Git\bin
+C:\Program Files\Git\cmd
+dir "C:\Users\Sri Maanesh\AppData\Local\Programs\Python\Python314\Scripts"
+C:\Users\Sri Maanesh\AppData\Local\Programs\Python\Python314\
+C:\Users\Sri Maanesh\AppData\Local\Programs\Python\Python314\Scripts\
