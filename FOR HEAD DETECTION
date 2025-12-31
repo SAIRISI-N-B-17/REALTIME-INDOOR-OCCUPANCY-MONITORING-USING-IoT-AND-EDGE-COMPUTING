@@ -1,0 +1,7 @@
+from ultralytics import YOLO
+# Load the trained model
+model = YOLO('/home/pi/best.pt') # Adjust path if needed
+# Run inference on a test image
+results = model('/home/pi/test.jpg', save=True, conf=0.5)
+# Print detection results
+print("Detection complete. Results saved in:", results.save)
