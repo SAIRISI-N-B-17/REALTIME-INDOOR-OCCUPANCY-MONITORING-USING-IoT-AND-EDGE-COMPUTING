@@ -1,0 +1,20 @@
+from flask import Flask, render_template
+import os
+app = Flask(_name_)
+@app.route('/')
+def index():
+ try:
+ with open("/home/raspberryss/head_count.txt", "r") as f:
+ head_count = f.read()
+ except FileNotFoundError:
+ head_count = "N/A"
+ return render_template("index.html", head_count=head_count)
+@app.route('/head_count')
+def get_head_count():
+ try:
+ with open("/home/raspberryss/head_count.txt", "r") as f:
+ return f.read()
+ except FileNotFoundError:
+ return "N/A"
+if _name_ == "_main_":
+ app.run(debug=False, host='0.0.0.0')
